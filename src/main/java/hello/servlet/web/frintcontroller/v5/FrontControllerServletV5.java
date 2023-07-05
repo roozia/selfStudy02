@@ -56,7 +56,7 @@ public class FrontControllerServletV5 extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Object handler = getHandler(request);
+        Object handler = getHandler(request);  // controller
 
         if(handler==null){
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);

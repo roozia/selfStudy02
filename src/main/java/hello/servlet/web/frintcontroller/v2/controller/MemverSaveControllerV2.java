@@ -23,7 +23,7 @@ public class MemverSaveControllerV2 implements ControllerV2 {
         memberRepository.save(member);
 
         // Model 에 Data를 보관한다.
-        request.setAttribute("name", member);
+        request.setAttribute("member", member);
 
         return new MyView("/WEB-INF/views/save-result.jsp");
     }
